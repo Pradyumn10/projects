@@ -1,3 +1,12 @@
+'''
+* @file discord_bot.py
+* @author Pradyumn Joshi
+* @brief A generalised discord bot playing music
+* @version 0.1.0
+* @date 2020-09-19
+*
+* @copyright Copyright (c) 2020
+'''
 import discord
 from discord.ext import commands, tasks
 from random import choice
