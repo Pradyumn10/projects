@@ -1,0 +1,39 @@
+#The name of environment variable that contains the bot token.
+Bot Token Vairable Name : BotToken
+
+#Prefix to call bot commands
+Prefix : "~"
+
+#The 'playing ___' status of bot
+Playing Status : "{prefix}help"
+
+#The channel ID wheer bot can spam
+Log Channel ID : 754437933511082016
+
+#Settings that apply to embedded message that bot sends
+Embed Settings : 
+        Color :
+                r : 0
+                g : 0
+                b : 0
+        Footer :
+                Text : Bot by PRADYUMN
+                Icon URL : https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80
+
+YTDL Format Options : {
+    'format': 'bestaudio/best',
+    'outtmpl': '%(extractor)s-%(id)s-%(title)s.%(ext)s',
+    'restrictfilenames': True,
+    'noplaylist': True,
+    'nocheckcertificate': True,
+    'ignoreerrors': False,
+    'logtostderr': False,
+    'quiet': True,
+    'no_warnings': True,
+    'default_search': 'auto',
+    'source_address': '0.0.0.0' # bind to ipv4 since ipv6 addresses cause issues sometimes
+}
+
+FFMPEG Options : {
+    'options': '-vn'
+}
