@@ -54,8 +54,6 @@ client = commands.Bot(command_prefix = config['Prefix'],
         description = 'A generalized bot developed by Pradyumn', 
         case_insensitive = True)
 
-token = "NzUzNTEzNTk4NDU3NzQxMzIy.X1nSOQ.XjHKC66qt0lrwTvGExbPH2GE4oM"   #bot token
-
 log_channel_id = config['Log Channel ID']
 
 client.embed_color = discord.Color.from_rgb(
