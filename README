@@ -1,9 +1,10 @@
-This is a face detection system created using OpenCV Python. 
+This folder contains the python projects which are created by Pradyunm Joshi.
+1. Discord Bot
+2. Face Detection System
 
 Details
 System Details : Asus R542U Laptop
 OS : Ubuntu 18.04
 Python Version : 3
-Classifier : Cascade Classifier
 
 Copyright (c) 2020
