@@ -1,0 +1,9 @@
+This is a face detection system created using OpenCV Python. 
+
+Details
+System Details : Asus R542U Laptop
+OS : Ubuntu 18.04
+Python Version : 3
+Classifier : Cascade Classifier
+
+Copyright (c) 2020
