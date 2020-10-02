@@ -1,4 +1,9 @@
-All the projects created by Pradyumn Joshi
-1. Discord Bot
+This is a face detection system created using OpenCV Python. 
 
-Copyright (c)2020
+Details
+System Details : Asus R542U Laptop
+OS : Ubuntu 18.04
+Python Version : 3
+Classifier : Cascade Classifier
+
+Copyright (c) 2020
