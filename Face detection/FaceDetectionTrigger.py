@@ -1,8 +1,8 @@
 """
-*  @file faceDetection.py
+*  @file FaceDetectionTrigger.py
 *  @author Pradyumn Joshi
-*  @brief Basic facial recognition system using OpenCV
-*  @version 0.2.0
+*  @brief Basic facial recognition system with trigger using OpenCV
+*  @version 0.1.0
 *  @date 2020-08-8
 *
 *  @copyright Copyright (c) 2020
@@ -62,18 +62,18 @@ class Detection():
         """
         It grabs the frame and processes it 
         """
-        print("press q to quit")
+  
         while(True):
             
             frame = self.cam.frames()
 
             if frame is not None:
 
-                #cv2.imshow("frame" ,frame)
-                gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                self.findFace(gray_frame,frame)
-                #return gray_frame,frame
-                
+                cv2.imshow("frame" ,frame)
+                if cv2.waitKey(1) & 0xFF == ord(" "):
+                    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                    self.findFace(gray_frame,frame)
+                    #return gray_frame,frame
                 if cv2.waitKey(1) &0xFF == ord("q"):
                     break 
             else :
@@ -98,8 +98,9 @@ class Detection():
         cv2.imwrite("./images/{}.jpg".format(self.count),frame)
         self.count += 1
         cv2.imshow("Detected Face", frame)
-    
-        #print("Time Consumed ", (time.time()-t_start))
+        cv2.waitKey(1500)
+        cv2.destroyWindow("Detected Face")
+        print("Time Consumed ", (time.time()-t_start))
 
 #running the class
 if __name__ == "__main__":
