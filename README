@@ -1,12 +1,15 @@
 This folder contains the python projects which are created by Pradyunm Joshi.
-1. Discord Bot
-2. Face Detection System
-3. Security Camera
-4. Padhai Platform Website
+
+1. Discord Bot - Discord
+2. Face Detection System - OpenCV
+3. Security Camera -OpenCV, Tkniter
+4. Padhai Platform Website - Tkinter
+5. Sports Person Classifier - ML Model, SVM, Flask
+6. Bengluru House Price - ML Model, Logistic Regression, Flask
 
 Details
 System Details : Asus R542U Laptop
 OS : Ubuntu 18.04
-Python Version : 3
+Python Version : 3.6
 
 Copyright (c) 2020
